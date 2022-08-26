@@ -1,0 +1,21 @@
+CREATE TABLE `HiredCandidate` (
+  `ID` int NOT NULL,
+  `LastName` varchar(255) NOT NULL,
+  `MidddleName` varchar(255) NOT NULL,
+  `FirstName` varchar(255) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `HiredCity` varchar(255) NOT NULL,
+  `Degree` varchar(255) NOT NULL,
+  `HiredDate` date DEFAULT NULL,
+  `MobileNumber` varchar(255) NOT NULL,
+  `PermanentPincode` varchar(255) NOT NULL,
+  `HiredLab` varchar(255) NOT NULL,
+  `Attitude` varchar(255) NOT NULL,
+  `CommunicationRemark` varchar(255) NOT NULL,
+  `KnowledgeRemark` varchar(255) NOT NULL,
+  `AggregateRemarkUser_Details` varchar(255) NOT NULL,
+  `Status` bit(1) DEFAULT NULL,
+  `CreatorStamp` datetime DEFAULT NULL,
+  `CreatorUser` int DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

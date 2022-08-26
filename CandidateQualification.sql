@@ -1,0 +1,23 @@
+CREATE TABLE `CandidateQualification` (
+  `ID` int NOT NULL,
+  `diploma` varchar(255) DEFAULT NULL,
+  `degree_name` varchar(255) DEFAULT NULL,
+  `is_degree_name_verified` bit(1) DEFAULT NULL,
+  `employee_discipline` varchar(255) DEFAULT NULL,
+  `is_employee_discipline_verified` bit(1) DEFAULT NULL,
+  `passing_year` date DEFAULT NULL,
+  `is_passing_year_verified` bit(1) DEFAULT NULL,
+  `aggregate_per` varchar(255) DEFAULT NULL,
+  `is_aggregate_per_verified` bit(1) DEFAULT NULL,
+  `final_year_per` varchar(255) DEFAULT NULL,
+  `is_final_year_per_verified` bit(1) DEFAULT NULL,
+  `training_institute` varchar(255) DEFAULT NULL,
+  `is_training_institute_verified` bit(1) DEFAULT NULL,
+  `training_duration_month` int DEFAULT NULL,
+  `is_ftraining_duration_month_verified` bit(1) DEFAULT NULL,
+  `other_training` varchar(255) DEFAULT NULL,
+  `is_other_training_verified` bit(1) DEFAULT NULL,
+  `CreatorStamp` datetime DEFAULT NULL,
+  `CreatorUser` int DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+);
